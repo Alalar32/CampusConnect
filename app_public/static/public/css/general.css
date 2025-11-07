@@ -1,10 +1,10 @@
 :root {
   --primary-color: #3498db;
-  --secondary-color: #F2994A;
+  --secondary-color: #f2994a;
   --font-color: #333333;
-  --btn-color: #F27D16;
-  --background-color: #FFF8F0;
-  --link-color: #0A5DA6;
+  --btn-color: #f27d16;
+  --background-color: #fff8f0;
+  --link-color: #0a5da6;
   --border-radius: 5px;
 }
 * {
@@ -14,33 +14,87 @@
 }
 
 body {
-  font-family: 'poppins',open sans-serif;
+  font-family: "poppins", open sans-serif;
   color: var(--font-color);
   background-color: var(--background-color);
   line-height: 1.6;
 }
 
 nav.navbar {
-    display: flex;
-  background-color: rgb(17, 17, 17);
+  display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  padding: 1rem 2rem;
+  width: 100%;
 }
+
+nav .logo {
+  width: 150px;
+  height: auto;
+}
+
 nav.navbar ul {
   list-style: none;
   display: flex;
-    gap: 1rem;
-    
+  gap: 20px;
+  align-items: center;
 }
+
 nav.navbar ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  justify-content: center;
- 
+  font-size: 1.1rem;
 }
 
-nav div .logo {
-  width: 200px;
-  height: 50px;
+nav .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+nav .hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    position: relative;
+  }
+
+   .nav-links {
+    position: absolute;
+    top: 30px;
+    gap: 5px !important;
+    right: 0;
+    padding: 20px;
+    background: rgb(17, 17, 17);
+    display: none;
+    flex-direction: column;
+    
+    
+  }
+
+  nav .auth-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    gap: 4.5px;
+    display: block!important;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2px;
+  }
 }

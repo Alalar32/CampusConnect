@@ -1,24 +1,19 @@
-{% load static %} {% comment %}
-<nav class="navbar">
-  <ul>
-    <li><a href="{% url 'home' %}">Home</a></li>
-    <li><a href="{% url 'about' %}">About</a></li>
-    <li><a href="{% url 'contact' %}">Contact</a></li>
-    <li><a href="{% url 'accounts:login' %}">Login</a></li>
-    <li><a href="{% url 'accounts:register' %}">Join Now</a></li>
-  </ul>
-</nav>
-{% endcomment %}
+{% load static %} 
 
 <nav class="navbar">
   <div><img class="logo" alt="logo" src="{% static 'images/icon.png' %}" /></div>
-  <ul>
+  <ul class="nav-links">
     <li><a href="{% url 'home' %}">Home</a></li>
     <li><a href="{% url 'about' %}">About</a></li>
     <li><a href="{% url 'contact' %}">Contact</a></li>
   </ul>
-  <ul>
+  <ul class="auth-links">
     <li><a href="{% url 'accounts:login' %}">Login</a></li>
     <li><a href="{% url 'accounts:register' %}">Join Now</a></li>
   </ul>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
