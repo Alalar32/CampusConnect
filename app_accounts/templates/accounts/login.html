@@ -1,11 +1,55 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Campus Connect | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusConnect - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-background: #fff8f0;
+        --color-accent: #f2994a;
+        --color-button: #f27d16;
+        --color-text: #333333;
+        --color-link: #0a5da6;
+      }
+
+      body {
+        background-color: var(--color-background);
+        font-family: "Poppins", sans-serif;
+        color: var(--color-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .btn-primary {
+        background-color: var(--color-button);
+        color: white;
+        transition: background-color 0.2s;
+      }
+      .btn-primary:hover {
+        background-color: var(--color-accent);
+      }
+      .link-text {
+        color: var(--color-link);
+        transition: color 0.2s;
+      }
+      .link-text:hover {
+        color: #084988;
+      }
+      .input-focus:focus {
+        border-color: var(--color-accent);
+        box-shadow: 0 0 0 3px rgba(242, 125, 22, 0.4);
+      }
+    </style>
   </head>
   <body>
     <div
