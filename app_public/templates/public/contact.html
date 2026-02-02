@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{% static 'public/css/general.css' %}" />
+    <link rel="stylesheet" href="{% static 'public/css/contact.css' %}" />
     
     <style>
-      :root { --forest-green: #2D5A27; --sage-bg: #F5F5F5; }
+      :root { --forest-green: rgba(0, 68, 124, 1); --sage-bg: #F5F5F5; }
       body { background-color: var(--sage-bg); }
       
       .contact-header {
-        background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(45, 90, 39, 0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1350&q=80');
+        background: linear-gradient(rgba(0, 68, 124, 0.9), rgba(0, 68, 124, 0.9)), url('{% static "images/contacthero.jpg" %}');
         background-size: cover; background-position: center;
         color: white; padding: 60px 0; text-align: center;
       }
@@ -38,7 +39,7 @@
         background-color: var(--forest-green); border: none; color: white;
         padding: 12px 30px; border-radius: 8px; font-weight: 600; transition: 0.3s;
       }
-      .btn-submit:hover { background-color: #21431d; transform: translateY(-2px); }
+      .btn-submit:hover { background-color: #1d3243ff; transform: translateY(-2px); }
       
       .contact-icon { font-size: 1.5rem; margin-right: 15px; color: #a3c59e; }
     </style>
@@ -64,21 +65,21 @@
                 
                 <div class="d-flex align-items-center mb-4">
                   <i class="bi bi-geo-alt contact-icon"></i>
-                  <span>Xonovate Innovation Hub, Campus Block A</span>
+                  <span>Glover St, Aworshie</span>
                 </div>
                 <div class="d-flex align-items-center mb-4">
                   <i class="bi bi-envelope-at contact-icon"></i>
-                  <span>support@campusconnect.edu</span>
+                  <span>info@xonovate.com</span>
                 </div>
                 <div class="d-flex align-items-center mb-4">
                   <i class="bi bi-telephone contact-icon"></i>
-                  <span>+233 24 000 0000</span>
+                  <span>+233 59 635 2360</span>
                 </div>
 
                 <div class="social-links mt-5">
-                  <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/company/xonovatetechnologies/posts/?feedView=all" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
                   <a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/xonovatecodechampions/" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
 
