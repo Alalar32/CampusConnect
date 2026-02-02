@@ -1,11 +1,10 @@
-/* GENERAL STRUCTURE */
-.container {
+/* .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
   padding: 50px 0;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 h1, h2 {
   font-weight: 700;
@@ -24,15 +23,13 @@ h1, h2 {
   margin-top: 15px;
 }
 
-/* HERO SECTION */
-.contact-hero {
-  background: #f5f9ff;
-  padding: 80px 0;
+
+.contact-header {
+  padding: 80px 0 !important; 
   text-align: center;
   border-bottom: 1px solid #e3e3e3;
 }
 
-/* FORM SECTION */
 .contact-form-section {
   background: #ffffff;
 }
@@ -73,7 +70,7 @@ textarea {
   min-height: 150px;
 }
 
-/* BUTTON */
+
 .btn-submit {
   background: #3c6ff7;
   color: #fff;
@@ -90,7 +87,7 @@ textarea {
   background: #345be2;
 }
 
-/* SUCCESS MESSAGE */
+
 .success-message {
   margin-top: 15px;
   font-size: 0.95rem;
@@ -98,7 +95,7 @@ textarea {
   display: none; /* shown after form is submitted */
 }
 
-/* DIRECT CONTACT SECTION */
+
 .direct-contact {
   background: #f5f9ff;
   padding: 60px 0;
